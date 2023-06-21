@@ -10,13 +10,10 @@ import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.
 import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
 
-
-
-
 contract sellItMarketPlace is Initializable , ERC721Upgradeable, ERC721EnumerableUpgradeable, ERC721URIStorageUpgradeable, ERC721BurnableUpgradeable, OwnableUpgradeable , UUPSUpgradeable{
       /// @custom:oz-upgrades-unsafe-allow constructor
     function initialize(address _marketplaceOwner,uint256 _setServiceFee) public initializer {
-        __ERC721_init("sellItMarket", "SIM");
+        __ERC721_init("Market", "MAR");
         __Ownable_init();
         __UUPSUpgradeable_init();
 
